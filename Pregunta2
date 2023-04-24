@@ -1,0 +1,154 @@
+<?php
+include "cabecera.inc.php";
+include "menu.inc.php";
+include "cuerpo1.inc.php";
+
+?><p >Bienvenidos a la Facultad de Ciencias Puras y Naturales</p>
+<?php
+include "pie.php";
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Linux Blog</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href="default.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="wrapper">
+  <div id="header"> <img id="logo" src="images/tuxmini.png" alt="tux"/>
+    <h1> <a href="#">Linux Blog</a></h1>
+    <h3>by Sumanasa.com</h3>
+  </div>
+  <div id="menu">
+    <ul>
+      <li><a class="current" href=""WebForm1.aspx">Home</a></li>
+      <li><a href="/WebInformatica.aspx">INFORMATICA</a></li>
+      <li><a href="/WebFisica.aspx">FISICA</a></li>
+      <li><a href="/WebQuimica.aspx">QUIMICA</a></li>
+      <li><a href="/WebLinks.aspx">Links</a></li>
+    </ul>
+  </div>
+  <div id="content">
+    <div id="sidebar">
+      <ul>
+        <li id="categories">
+          <h2>Categories</h2>
+          <ul>
+             <li><a href="/WebInformatica.aspx">Informatica</a></li>
+            <li><a href="/WebFisica.aspx">Fisica</a></li>
+            <li><a href="/WebQuimica.aspx">Quimica</a> </li>
+            <li><a href="#">Estadistica</a> </li>
+            <li><a href="#">Matematica</a></li>
+            <li><a href="#">Biologia</a> </li>
+          </ul>
+        </li>
+        <!-- end #categories -->
+        <li id="archives">
+          <h2>Archives</h2>
+          <ul>
+            <li><a href="#">April 2007</a></li>
+            <li><a href="#">March 2007</a></li>
+            <li><a href="#">February 2007</a></li>
+            <li><a href="#">January 2007</a></li>
+            <li><a href="#">December 2006</a></li>
+          </ul>
+        </li>
+        <!-- end #archives -->
+        <li id="blogroll">
+          <h2>Blogroll</h2>
+          <ul>
+            <li><a href="#">Jack Hogan</a></li>
+            <li><a href="#">Jill Reagan</a></li>
+            <li><a href="#">Humpty Smith</a></li>
+            <li><a href="#">Bumpty Smith</a></li>
+            <li><a href="#">Mary Lamb</a></li>
+          </ul>
+        </li>
+        <!-- end #blogroll -->
+        <li id="meta">
+          <h2>Meta</h2>
+          <ul>
+            <li><a href="#">Site Admin</a></li>
+            <li><a href="#">Logout</a></li>
+            <li><a href="http://validator.w3.org/check/referer">Valid <abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a></li>
+          </ul>
+        </li>
+        <!-- end #meta -->
+      </ul>
+    </div>
+    <!-- end #sidebar -->
+    <div id="blog">
+      <div id="post-1" class="post">
+           <h2 class="title"> <a href="#">Bienvenidos a la FCPN</a></h2>
+        <h4 class="date">Abril 24, 2023</h4>
+        <div class="entry">
+
+
+          <p><strong>Facultad de Ciencias Puras y Naturales</strong>   <a href="http:https://www.fcpn.edu.bo/">fcpn.edu.bo</a>. .</p>
+          <p>Facultad de Ciencias Puras y Naturales (FCPN), es referirse al inicio de la misma Universidad Mayor de San Andrés (UMSA), cuando el 30 de noviembre de 1830, se inauguró la Universidad Menor de San Andrés, con los grados de profesor, bachiller o licenciado.
+
+El 13 de agosto del año 1831, mediante la Ley de la Asamblea General Constituyente, se elevó el rango a Universidad Mayor de San Andrés, la cual podía conceder el título de doctor. En el año 1841 y 1847, se enseñaban Matemáticas Elevadas, Historia Natural, Física, Química y los títulos otorgados fueron de: Agrimensor, Topógrafo e Ingeniero.
+
+El 25 de mayo de 1966, fué creado el Instituto Superior de Ciencias Básicas, en remplazo del Instituto de Ciencias Exactas, que dió origen a la Facultad de Ciencias Puras y Naturales fecha en la que conmemoramos el nacimiento de nuestra Facultad.</p>
+        </div>
+        <p class="meta">Posted in <a href="#">Category #1</a> | <a href="#">Edit</a> | <a href="#">1 Comment &raquo;</a></p>
+      </div>
+      <!-- end #post-1 -->
+      <div id="post-2" class="post">
+        <h2 class="title"> <a href="#">MISION</a></h2>
+        <h4 class="date">January 31, 2007</h4>
+        <div class="entry">
+          <p>A one-sentence paragraph followed by a blockquoted paragraph.</p>
+          <blockquote>
+            <p>&ldquo;A collection of nursery rhymes and songs to share and enjoy, with pictures to print off and color in.&rdquo;</p>
+          </blockquote>
+          <h3>VISION</h3>
+          <ul>
+            <li>Jack and Jill went up the hill</li>
+            <li>To fetch a pail of water</li>
+            <li>Jack fell down, and broke his crown</li>
+            <li>And Jill came tumbling after.</li>
+          </ul>
+          <h3>OBJETIVOS</h3>
+          <ol>
+            <li>Mary had a little lamb</li>
+            <li>Its fleece was white as snow</li>
+            <li>And everywhere that Mary went</li>
+            <li>The lamb was sure to go.</li>
+          </ol>
+        </div>
+        <p class="meta">Posted in <a href="#">Category #1</a> | <a href="#">Edit</a> | <a href="#">1 Comment &raquo;</a></p>
+      </div>
+      <!-- end #post-2 -->
+    </div>
+    <!-- end #blog -->
+    <div style="clear: both; height: 1px;"></div>
+  </div>
+  <!-- end #content -->
+  <!-- Please do not remove the "Design by" information. -->
+  <div id="footer">
+    <p>Design by <a href="http://www.sumanasa.com/">Sumanasa.com</a></p>
+  </div>
+  <!-- end footer -->
+</div>
+<!-- end #wrapper -->
+</body>
+</html>
+
+</div>
+	</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo Maquetado</title>
+	<link rel="stylesheet" type="text/css" href="./estilo.css">
+</head>
+<body>
+	<div class="cabecera">
+		<h1 style="font-size: 12px;font-family: arial"><center>Universidad Mayor de San Andres</center></h1><br>
+		<h2 style="font-size: 12px; font-family: arial"><center>Facultad de Ciencias Puras y Naturales</center></h2>
+	</div>
+	      <!-- end loader -->
+      <!-- header -->
