@@ -1,0 +1,144 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.1
+-- https://www.phpmyadmin.net/
+--
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 24-04-2023 a las 05:16:04
+-- Versión del servidor: 10.4.28-MariaDB
+-- Versión de PHP: 8.0.28
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Base de datos: `mibasebrilda`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `inscripcion`
+--
+
+CREATE TABLE `inscripcion` (
+  `codinscripcion` int(11) NOT NULL,
+  `CIestudiante` varchar(11) NOT NULL,
+  `Sigla` varchar(20) NOT NULL,
+  `nota1` float NOT NULL,
+  `nota2` float NOT NULL,
+  `nota3` float NOT NULL,
+  `notafinal` float NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `inscripcion`
+--
+
+INSERT INTO `inscripcion` (`codinscripcion`, `CIestudiante`, `Sigla`, `nota1`, `nota2`, `nota3`, `notafinal`) VALUES
+(11122, '33344554', 'INF-121', 30, 25, 25, 80),
+(12312, '12121223', 'INF-123', 25, 30, 30, 85),
+(22233, '23333323', 'INF-125', 20, 20, 25, 65),
+(32229, '11110002', 'INF-124', 25, 25, 20, 70);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `persona`
+--
+
+CREATE TABLE `persona` (
+  `IdPersona` int(11) NOT NULL,
+  `Nombre_completo` varchar(50) NOT NULL,
+  `fecha_de_nacimiento` date NOT NULL,
+  `telefono` varchar(15) NOT NULL DEFAULT '',
+  `departamento` varchar(2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `persona`
+--
+
+INSERT INTO `persona` (`IdPersona`, `Nombre_completo`, `fecha_de_nacimiento`, `telefono`, `departamento`) VALUES
+(111, 'Carlos Crispín Aliñado Asturias ', '1998-04-27', '(591)77737372', '02'),
+(121, 'Maria de los Angeles Castillo Benavídez', '1997-04-04', '(591)71222234', '01'),
+(123, ' Margarita  López López', '1995-12-14', '(591)71537234', '05'),
+(124, 'Susan Patricia Rivas Garrido', '1998-03-01', '(591)61577134', '02');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `usuario`
+--
+
+CREATE TABLE `usuario` (
+  `IdUsuario` int(11) NOT NULL,
+  `ci` varchar(11) NOT NULL,
+  `Usuario` varchar(30) NOT NULL,
+  `Password` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `usuario`
+--
+
+INSERT INTO `usuario` (`IdUsuario`, `ci`, `Usuario`, `Password`) VALUES
+(1111, '11110002', 'ccaa', '123'),
+(2222, '23333323', 'macb', '123'),
+(3333, '12121223', 'mll', '123'),
+(4444, '33344554', 'sprg', '123');
+
+--
+-- Índices para tablas volcadas
+--
+
+--
+-- Indices de la tabla `inscripcion`
+--
+ALTER TABLE `inscripcion`
+  ADD PRIMARY KEY (`codinscripcion`);
+
+--
+-- Indices de la tabla `persona`
+--
+ALTER TABLE `persona`
+  ADD PRIMARY KEY (`IdPersona`);
+
+--
+-- Indices de la tabla `usuario`
+--
+ALTER TABLE `usuario`
+  ADD PRIMARY KEY (`IdUsuario`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `inscripcion`
+--
+ALTER TABLE `inscripcion`
+  MODIFY `codinscripcion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32230;
+
+--
+-- AUTO_INCREMENT de la tabla `persona`
+--
+ALTER TABLE `persona`
+  MODIFY `IdPersona` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=125;
+
+--
+-- AUTO_INCREMENT de la tabla `usuario`
+--
+ALTER TABLE `usuario`
+  MODIFY `IdUsuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4445;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
